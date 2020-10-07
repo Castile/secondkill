@@ -74,15 +74,21 @@
 <!--        </table>-->
 
 
-        <table tableName="item" domainObjectName="ItemDO" enableCountByExample="true"
+<!--        <table tableName="item" domainObjectName="ItemDO" enableCountByExample="true"-->
+<!--               enableUpdateByExample="false" enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false" selectByExampleQueryId="false">-->
+
+<!--        </table>-->
+<!--        <table tableName="item_stock" domainObjectName="ItemStockDO" enableCountByExample="true"-->
+<!--               enableUpdateByExample="false" enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false" selectByExampleQueryId="false">-->
+
+<!--        </table>-->
+
+
+        <table tableName="order_info" domainObjectName="OrderDO" enableCountByExample="true"
                enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false">
-
-        </table>
-        <table tableName="item_stock" domainObjectName="ItemStockDO" enableCountByExample="true"
-               enableUpdateByExample="false" enableDeleteByExample="false"
-               enableSelectByExample="false" selectByExampleQueryId="false">
-
         </table>
     </context>
 </generatorConfiguration>
