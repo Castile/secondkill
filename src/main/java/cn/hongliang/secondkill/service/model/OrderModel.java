@@ -20,6 +20,17 @@ public class OrderModel {
     // 商品id
     private Integer itemId;
 
+    // 购买的数量
+    private Integer amount;
+
+    public Integer getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Integer amount) {
+        this.amount = amount;
+    }
+
     // 商品的的单价
     private BigDecimal itemPrice;
 

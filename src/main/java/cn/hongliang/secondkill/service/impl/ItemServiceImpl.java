@@ -123,6 +123,37 @@ public class ItemServiceImpl implements ItemService {
     }
 
     /**
+     * 库建库存
+     * @param itemId
+     * @param amount
+     * @return
+     */
+    @Override
+    @Transactional
+    public boolean decreaseStock(Integer itemId, Integer amount) {
+        int affectedRow = itemStockDOMapper.decreaseStock(itemId, amount);
+        if(affectedRow > 0){
+            // 更新库存成功
+            return true;
+        }
+        // 更新库存失败
+        return false;
+    }
+
+
+    /**
+     * 商品销量的增加
+     * @param itemId
+     * @param amount
+     * @throws BusinessException
+     */
+    @Override
+    @Transactional
+    public void increaseSales(Integer id, Integer amount) {
+        itemDOMapper.increaseSales(id, amount);
+    }
+
+    /**
      * 将数据模型转换为model
      * @param itemDO
      * @return

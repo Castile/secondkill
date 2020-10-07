@@ -86,7 +86,12 @@
 <!--        </table>-->
 
 
-        <table tableName="order_info" domainObjectName="OrderDO" enableCountByExample="true"
+<!--        <table tableName="order_info" domainObjectName="OrderDO" enableCountByExample="true"-->
+<!--               enableUpdateByExample="false" enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+
+        <table tableName="sequence_info" domainObjectName="SequenceDO" enableCountByExample="true"
                enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false">
         </table>
